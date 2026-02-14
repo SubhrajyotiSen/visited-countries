@@ -7,4 +7,7 @@ countries = [
   "TH", // Thailand
   "AT", // Austria
   "VN", // Vietnam
+  "AE", // United Arab Emirates
+  "BD", // Bangladesh
+  "NO", // Norway
 ];

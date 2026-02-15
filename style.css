@@ -31,11 +31,19 @@ img:hover {
 }
 
 #header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
   padding: 12px 16px 10px;
-  text-align: center;
+  text-align: left;
   background: linear-gradient(180deg, var(--cream) 0%, var(--cream-dark) 100%);
   position: relative;
   overflow: hidden;
+}
+
+#header .header-copy {
+  text-align: center;
 }
 
 #footer {
@@ -449,6 +457,11 @@ a {
 
 /* Responsive design */
 @media (max-width: 768px) {
+  #header {
+    gap: 10px;
+    align-items: flex-start;
+  }
+
   h1 {
     font-size: 1.8em;
   }

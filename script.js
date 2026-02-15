@@ -1,7 +1,6 @@
 (function () {
   d3.xml("world.svg")
-    .mimeType("image/svg+xml")
-    .get(function (error, xml) {
+    .then(function (xml) {
       document.querySelector("#svg").appendChild(xml.documentElement);
 
       // Make ocean and world background transparent
@@ -24,8 +23,8 @@
         d3.selectAll(".hover").classed("hover", false);
         d3.selectAll("#" + this.id).classed("hover", true);
         showTooltip(this.id);
-      }).on("mousemove", function () {
-        moveTooltip(d3.event);
+      }).on("mousemove", function (event) {
+        moveTooltip(event);
       }).on("mouseout", function () {
         d3.selectAll(".hover").classed("hover", false);
         hideTooltip();
@@ -43,8 +42,8 @@
           d3.selectAll("#" + this.id).classed("hover", true);
           showTooltip(this.id);
         }
-      }).on("mousemove", function () {
-        moveTooltip(d3.event);
+      }).on("mousemove", function (event) {
+        moveTooltip(event);
       }).on("mouseout", function () {
         d3.selectAll(".hover").classed("hover", false);
         hideTooltip();
@@ -81,6 +80,9 @@
       d3.select("#globe-percent").text(
         Math.round((100 * countries.length) / 193) + "%"
       );
+    })
+    .catch(function (error) {
+      console.error("Failed to load SVG map:", error);
     });
 })();
 

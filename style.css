@@ -61,7 +61,7 @@ img:hover {
   background: linear-gradient(90deg, var(--accent-warm), var(--accent-gold), var(--accent-warm));
 }
 
-#footer h4 {
+#footer h3 {
   max-width: 900px;
   padding: 35px 20px;
   margin: 0 auto;
@@ -333,7 +333,7 @@ a {
   text-align: center;
 }
 
-#footer h4 {
+#footer h3 {
   padding: 10px 20px;
 }
 
@@ -473,7 +473,7 @@ a {
     font-size: 3.5em;
   }
 
-  #footer h4 {
+  #footer h3 {
     padding: 25px 15px;
     font-size: 0.85em;
   }

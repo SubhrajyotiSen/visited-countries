@@ -32,7 +32,7 @@ img:hover {
 
 #header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 14px;
   padding: 12px 16px 10px;
@@ -44,6 +44,12 @@ img:hover {
 
 #header .header-copy {
   text-align: center;
+}
+
+#header .header-backpack {
+  flex: 0 0 auto;
+  align-self: flex-start;
+  margin-top: 2px;
 }
 
 #footer {
@@ -100,7 +106,7 @@ img:hover {
 }
 
 h1 {
-  margin: 8px 0 0;
+  margin: 0;
   font-family: "Nunito", sans-serif;
   font-size: 2.1em;
   font-weight: 800;

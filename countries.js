@@ -10,4 +10,7 @@ countries = [
   "AE", // United Arab Emirates
   "BD", // Bangladesh
   "NO", // Norway
+  "CH", // Switzerland
+  "IT", // Italy
+  "LI", // Liechtenstein
 ];

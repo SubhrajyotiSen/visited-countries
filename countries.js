@@ -13,4 +13,5 @@ countries = [
   "CH", // Switzerland
   "IT", // Italy
   "LI", // Liechtenstein
+  "DE", // Germany
 ];
